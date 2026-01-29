@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /* ================================
    OPEN PUBHTML5 FLIPBOOK (MONTH-WISE)
 ================================ */
-function openBook(month){
+function openBook(month) {
 
     // Month-wise PubHTML5 links (only January is live now)
     const monthLinks = {
@@ -62,8 +62,8 @@ if (feedbackForm) {
 
     const loadingMsg = document.getElementById("feedbackLoading");
     const successMsg = document.getElementById("feedbackSuccess");
-    const errorMsg   = document.getElementById("feedbackError");
-    const submitBtn  = document.getElementById("feedbackBtn");
+    const errorMsg = document.getElementById("feedbackError");
+    const submitBtn = document.getElementById("feedbackBtn");
 
     feedbackForm.addEventListener("submit", async function (e) {
         e.preventDefault();
@@ -110,3 +110,14 @@ if (feedbackForm) {
         }
     });
 }
+
+// Smooth scroll for certificate month buttons
+document.querySelectorAll('.certificate-grid a').forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});

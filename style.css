@@ -25,7 +25,7 @@ body {
     border-radius: 15px;
     max-width: 1024px;
     text-align: center;
-    box-shadow:0 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 /* ===== NAV ===== */
@@ -34,7 +34,7 @@ nav {
     padding: 20px;
     border-radius: 15px;
     text-align: center;
-    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .yearView {
@@ -63,12 +63,12 @@ nav {
     font-weight: bold;
     border-radius: 6px;
     cursor: pointer;
-    box-shadow:0 3px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
 }
 
 .month-container button:hover {
     background: #2563EB;
-    color:white;
+    color: white;
 }
 
 /* ===== IMAGE VIEWER ===== */
@@ -112,7 +112,7 @@ footer {
     padding: 18px;
     border-radius: 14px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .footer-box h3 {
@@ -240,60 +240,92 @@ footer {
 }
 
 /* ===== FEEDBACK FORM ===== */
-.feedback-form{
-    display:flex;
-    flex-direction:column;
-    gap:12px;
-    margin-top:10px;
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
 }
 
 .feedback-form input,
-.feedback-form textarea{
-    padding:12px;
-    border-radius:8px;
-    border:1px solid #ccc;
-    font-family:'Noto Sans Assamese',sans-serif;
-    font-size:14px;
-    width:100%;
+.feedback-form textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: 'Noto Sans Assamese', sans-serif;
+    font-size: 14px;
+    width: 100%;
 }
 
-.feedback-form button{
-    background:#2563EB;
-    color:white;
-    border:none;
-    padding:12px;
-    border-radius:8px;
-    font-size:16px;
-    cursor:pointer;
-    transition:0.3s;
+.feedback-form button {
+    background: #2563EB;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.feedback-form button:hover{
-    background:#1E3A8A;
+.feedback-form button:hover {
+    background: #1E3A8A;
 }
 
 /* ===== FEEDBACK FORM ENHANCED STYLE ===== */
-#feedbackLoading{
+#feedbackLoading {
     animation: blink 1s infinite;
 }
 
-@keyframes blink{
-    50%{opacity:0.5;}
+@keyframes blink {
+    50% {
+        opacity: 0.5;
+    }
 }
 
-.feedback-form button:disabled{
-    background:#999;
-    cursor:not-allowed;
+.feedback-form button:disabled {
+    background: #999;
+    cursor: not-allowed;
 }
 
 /* ===== PRIVACY POLICY LINK STYLE ===== */
-.privacy-link{
-    color:#2563EB;              /* Royal Blue */
-    text-decoration:underline;
-    font-weight:500;
+.privacy-link {
+    color: #2563EB;
+    /* Royal Blue */
+    text-decoration: underline;
+    font-weight: 500;
 }
 
-.privacy-link:hover{
-    color:#1E3A8A;              /* Dark Blue on hover */
-    text-decoration-thickness:2px;
+.privacy-link:hover {
+    color: #1E3A8A;
+    /* Dark Blue on hover */
+    text-decoration-thickness: 2px;
+}
+
+/* ===== CERTIFICATE SYSTEM ===== */
+
+.certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px 6px;
+    max-width: 420px;
+    margin: 15px auto;
+    justify-items: center;
+}
+
+.certificate-grid a {
+    width: 100%;
+    max-width: 120px;
+    padding: 8px 6px;
+    background: #2563EB;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.certificate-grid a:hover {
+    background: #1E40AF;
 }
